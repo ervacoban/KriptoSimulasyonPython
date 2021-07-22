@@ -1,0 +1,23 @@
+<RCC>
+  <qresource prefix="simge">
+    <file>simge/AVAX.png</file>
+    <file>simge/BTC.png</file>
+    <file>simge/CHZ.png</file>
+    <file>simge/DOGE.png</file>
+    <file>simge/ETH.png</file>
+    <file>simge/HOT.png</file>
+    <file>simge/XLM.png</file>
+    <file>simge/XRP.png</file>
+    <file>simge/logo.png</file>
+    <file>simge/s-asagi.png</file>
+    <file>simge/s-ayarlar.png</file>
+    <file>simge/s-cikis.png</file>
+    <file>simge/s-cuzdan.png</file>
+    <file>simge/s-giris.png</file>
+    <file>simge/s-kapat.png</file>
+    <file>simge/s-kayitol.png</file>
+    <file>simge/s-mail.png</file>
+    <file>simge/s-piyasa.png</file>
+    <file>simge/s-sifre.png</file>
+  </qresource>
+</RCC>

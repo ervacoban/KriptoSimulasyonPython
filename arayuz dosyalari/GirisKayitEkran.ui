@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GirisKayitEkran</class>
+ <widget class="QMainWindow" name="GirisKayitEkran">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>570</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>570</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI Historic</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	color: white;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="AnaFrame">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+	background-color: rgb(60, 99, 161);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="UstIcerikFrame">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>381</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{
+	color: white;
+	background-color: rgb(74, 125, 200);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="ProgAdiFrame">
+        <property name="geometry">
+         <rect>
+          <x>-1</x>
+          <y>-1</y>
+          <width>301</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="ProgAdiText">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>200</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI Historic</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	background: transparent;
+	margin-left: 5px;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>Kriptogram</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="ProgButonlar">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QPushButton" name="asagiButton">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>41</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {	
+	border: none;
+	background-color: transparent;
+}
+QPushButton:hover {
+	background-color: rgb(60, 99, 161);
+}
+QPushButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="simgeler.qrc">
+           <normaloff>:/simge/simge/s-asagi.png</normaloff>:/simge/simge/s-asagi.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="kapatButon">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>0</y>
+           <width>41</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {	
+	border: none;
+	background-color: transparent;
+}
+QPushButton:hover {
+	background-color: rgb(60, 99, 161);
+}
+QPushButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="simgeler.qrc">
+           <normaloff>:/simge/simge/s-kapat.png</normaloff>:/simge/simge/s-kapat.png</iconset>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="AltIcerikFrame">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>381</width>
+         <height>521</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QStackedWidget" name="SayfaWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>381</width>
+          <height>521</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="GirisEkrani">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>30</y>
+            <width>221</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+}
+</string>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>201</width>
+             <height>201</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="simgeler.qrc">:/simge/simge/logo.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>280</y>
+            <width>341</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+}
+</string>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QPushButton" name="KayitEkranButon">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>190</y>
+             <width>81</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>MS Shell Dlg 2</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {	
+	border: none;
+	background-color: transparent;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Kayıt Ol</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="SifreText">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>80</y>
+             <width>301</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+           <property name="placeholderText">
+            <string>Şifre</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="MailText">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>301</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Normal</enum>
+           </property>
+           <property name="placeholderText">
+            <string>E-Posta</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="GirisButon">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>140</y>
+             <width>301</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Giriş Yap</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QLabel" name="GirisErrorLabel">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>190</y>
+             <width>121</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>MS Shell Dlg 2</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <zorder>SifreText</zorder>
+          <zorder>MailText</zorder>
+          <zorder>GirisButon</zorder>
+          <zorder>GirisErrorLabel</zorder>
+          <zorder>KayitEkranButon</zorder>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="KayitEkrani">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>341</width>
+            <height>481</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+}
+</string>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QPushButton" name="GirisEkranButon">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>450</y>
+             <width>81</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {	
+	border: none;
+	background-color: transparent;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Giriş Yap</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="MailSifreKayitTekrar">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>340</y>
+             <width>301</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+           <property name="placeholderText">
+            <string>Şifre Tekrarı</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="MailTextKayit">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>220</y>
+             <width>301</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Normal</enum>
+           </property>
+           <property name="placeholderText">
+            <string>E-Posta</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="KayitOlButon">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>400</y>
+             <width>301</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Kayıt Ol</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="MailSifreKayit">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>280</y>
+             <width>301</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+           <property name="placeholderText">
+            <string>Şifre</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="SoyisimText">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>160</y>
+             <width>301</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Normal</enum>
+           </property>
+           <property name="placeholderText">
+            <string>Soyisim</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="IsimText">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>100</y>
+             <width>301</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Normal</enum>
+           </property>
+           <property name="placeholderText">
+            <string>İsim</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_7">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>10</y>
+             <width>81</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+}
+</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QLabel" name="label_4">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>81</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	background: transparent;
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="simgeler.qrc">:/simge/simge/logo.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="KayitErrorLabel">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>450</y>
+             <width>121</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>MS Shell Dlg 2</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <zorder>MailSifreKayitTekrar</zorder>
+          <zorder>MailTextKayit</zorder>
+          <zorder>KayitOlButon</zorder>
+          <zorder>MailSifreKayit</zorder>
+          <zorder>SoyisimText</zorder>
+          <zorder>IsimText</zorder>
+          <zorder>groupBox_7</zorder>
+          <zorder>KayitErrorLabel</zorder>
+          <zorder>GirisEkranButon</zorder>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="LoadEkrani">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>341</width>
+            <height>481</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+}
+</string>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QGroupBox" name="groupBox_6">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>20</y>
+             <width>121</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+}
+</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>101</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="simgeler.qrc">:/simge/simge/logo.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="progressBarFrame">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>170</y>
+             <width>280</width>
+             <height>280</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QFrame" name="progressBG">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>280</width>
+              <height>280</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 140px;
+	background-color: rgba(85, 170, 255, 100);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="QFrame" name="progressBarFrameIc">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>280</width>
+              <height>280</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 140px;
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.749 rgba(167, 10, 10, 0), stop:0.75 rgba(85, 170, 255, 255));
+
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="QFrame" name="progressContainer">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>30</y>
+              <width>220</width>
+              <height>220</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 110px;
+	background-color: rgb(57, 94, 153);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>60</y>
+               <width>181</width>
+               <height>101</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0">
+               <widget class="QLabel" name="YukleniyorText">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel{
+	background-color: transparent;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Yükleniyor...</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="YukleniyorYuzdeText">
+                <property name="font">
+                 <font>
+                  <pointsize>40</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel{
+	background-color: transparent;
+}</string>
+                </property>
+                <property name="text">
+                 <string>0%</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>MailText</tabstop>
+  <tabstop>SifreText</tabstop>
+  <tabstop>GirisButon</tabstop>
+  <tabstop>KayitEkranButon</tabstop>
+  <tabstop>asagiButton</tabstop>
+  <tabstop>kapatButon</tabstop>
+  <tabstop>IsimText</tabstop>
+  <tabstop>SoyisimText</tabstop>
+  <tabstop>MailTextKayit</tabstop>
+  <tabstop>MailSifreKayit</tabstop>
+  <tabstop>MailSifreKayitTekrar</tabstop>
+  <tabstop>KayitOlButon</tabstop>
+  <tabstop>GirisEkranButon</tabstop>
+ </tabstops>
+ <resources>
+  <include location="simgeler.qrc"/>
+ </resources>
+ <connections/>
+</ui>

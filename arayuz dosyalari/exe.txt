@@ -1,0 +1,1 @@
+pyinstaller --onefile -w --icon=icon.ico --version-file=v.txt 'main.py'

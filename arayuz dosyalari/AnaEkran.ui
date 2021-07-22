@@ -1,0 +1,5942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AnaEkran</class>
+ <widget class="QMainWindow" name="AnaEkran">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>950</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>950</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI Historic</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	color: white;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="AnaFrame">
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+	background-color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="AltFrame">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>59</y>
+         <width>931</width>
+         <height>571</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{
+	background-color:rgb(60, 99, 161);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="SolMenuFrame">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>71</width>
+          <height>571</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+	
+	background-color: rgb(45, 75, 121);
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="solMenuUstButonlar">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>-1</y>
+           <width>71</width>
+           <height>281</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="cuzdanButon">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>71</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {	
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(60, 99, 161);
+}
+QPushButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}
+</string>
+          </property>
+          <property name="text">
+           <string extracomment="Cüzdan"/>
+          </property>
+          <property name="icon">
+           <iconset resource="simgeler.qrc">
+            <normaloff>:/simge/simge/s-cuzdan.png</normaloff>:/simge/simge/s-cuzdan.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="piyasaButon">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>71</y>
+            <width>71</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {	
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(60, 99, 161);
+}
+QPushButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}
+</string>
+          </property>
+          <property name="text">
+           <string extracomment="Piyasa"/>
+          </property>
+          <property name="icon">
+           <iconset resource="simgeler.qrc">
+            <normaloff>:/simge/simge/s-piyasa.png</normaloff>:/simge/simge/s-piyasa.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="solMenuAltButonlar">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>290</y>
+           <width>71</width>
+           <height>281</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="cikisButon">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>210</y>
+            <width>71</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="toolTipDuration">
+           <number>-1</number>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {	
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(60, 99, 161);
+}
+QPushButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="simgeler.qrc">
+            <normaloff>:/simge/simge/s-cikis.png</normaloff>:/simge/simge/s-cikis.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="ayarlarButon">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>139</y>
+            <width>71</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {	
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(60, 99, 161);
+}
+QPushButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}
+</string>
+          </property>
+          <property name="text">
+           <string extracomment="Ayarlar"/>
+          </property>
+          <property name="icon">
+           <iconset resource="simgeler.qrc">
+            <normaloff>:/simge/simge/s-ayarlar.png</normaloff>:/simge/simge/s-ayarlar.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="SagIcerikFrame">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>0</y>
+          <width>861</width>
+          <height>571</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QStackedWidget" name="SayfaWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>861</width>
+           <height>571</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="cuzdanWidget">
+          <widget class="QGroupBox" name="cuzdanIcerik">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>841</width>
+             <height>551</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(210, 210, 210);
+}
+</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QFrame" name="FrameXLM">
+            <property name="geometry">
+             <rect>
+              <x>600</x>
+              <y>460</y>
+              <width>231</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoXLM">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/XLM.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextXLM">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>10</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Stellar (XLM)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="AdetXLM">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>30</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 XLM</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TLXLM">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>50</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="FrameDOGE">
+            <property name="geometry">
+             <rect>
+              <x>600</x>
+              <y>370</y>
+              <width>231</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoDOGE">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/DOGE.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextDOGE">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>10</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Dogecoin (DOGE)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="AdetDOGE">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>30</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 DOGE</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TLDOGE">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>50</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <zorder>LogoDOGE</zorder>
+            <zorder>AdetDOGE</zorder>
+            <zorder>TextDOGE</zorder>
+            <zorder>TLDOGE</zorder>
+           </widget>
+           <widget class="QFrame" name="FrameHOT">
+            <property name="geometry">
+             <rect>
+              <x>600</x>
+              <y>280</y>
+              <width>231</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoHOT">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/HOT.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextHOT">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>10</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Holo (HOT)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="AdetHOT">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>30</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 HOT</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TLHOT">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>50</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="FrameAVAX">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>460</y>
+              <width>231</width>
+              <height>80</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoAVAX">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/AVAX.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextAVAX">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>10</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Avalanche (AVAX)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="AdetAVAX">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>30</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 AVAX</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TLAVAX">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>50</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="FrameXRP">
+            <property name="geometry">
+             <rect>
+              <x>600</x>
+              <y>190</y>
+              <width>231</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoXRP">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/XRP.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextXRP">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>10</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Ripple (XRP)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="AdetXRP">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>30</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 XRP</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TLXRP">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>50</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="FrameCHZ">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>370</y>
+              <width>231</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoCHZ">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/CHZ.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextCHZ">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>10</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Chiliz (CHZ)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="AdetCHZ">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>30</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 CHZ</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TLCHZ">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>50</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="FrameBTC">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>190</y>
+              <width>231</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoBTC">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/BTC.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextBTC">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>10</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Bitcoin (BTC)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="AdetBTC">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>30</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 BTC</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TLBTC">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>50</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="FrameETH">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>280</y>
+              <width>231</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoETH">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/ETH.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextETH">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>10</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Ethereum (ETH)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="AdetETH">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>30</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 ETH</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TLETH">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>50</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="ParaGoruntu">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>821</width>
+              <height>171</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <widget class="QLabel" name="toplamParaDegisim">
+             <property name="geometry">
+              <rect>
+               <x>170</x>
+               <y>100</y>
+               <width>281</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;	
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="toplamPara">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>601</width>
+               <height>81</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>50</pointsize>
+               <weight>75</weight>
+               <italic>false</italic>
+               <bold>true</bold>
+               <underline>false</underline>
+               <strikeout>false</strikeout>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QWidget" name="cuzdanPastaGrafik" native="true">
+             <property name="geometry">
+              <rect>
+               <x>620</x>
+               <y>0</y>
+               <width>191</width>
+               <height>171</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="cuzdanDegerGrafik" native="true">
+            <property name="geometry">
+             <rect>
+              <x>240</x>
+              <y>220</y>
+              <width>361</width>
+              <height>301</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="bakiyeWidget">
+          <widget class="QGroupBox" name="bakiyeWidgetBox">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>841</width>
+             <height>551</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(210, 210, 210);
+}
+</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QGroupBox" name="ParaAtBox">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>110</y>
+              <width>391</width>
+              <height>311</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(210, 210, 210);
+}
+</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <widget class="QLineEdit" name="MiktarParaAt">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>70</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="maxLength">
+              <number>12</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Miktar (TL) (Örn: 1250.5)</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="CVCAtma">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>190</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="maxLength">
+              <number>3</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>CVC</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ParaAtmaText">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>10</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Para Atma</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="ParaYatirButon">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>250</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Yatır</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="KKNoAtma1">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>130</y>
+               <width>80</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="maxLength">
+              <number>4</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Kredi</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="KKNoAtma2">
+             <property name="geometry">
+              <rect>
+               <x>110</x>
+               <y>130</y>
+               <width>80</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="maxLength">
+              <number>4</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Kartı</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="KKNoAtma3">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>130</y>
+               <width>80</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="maxLength">
+              <number>4</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>No</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="KKNoAtma4">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>130</y>
+               <width>80</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="maxLength">
+              <number>4</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>4 Hane</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="ParaCekBox">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="geometry">
+             <rect>
+              <x>430</x>
+              <y>110</y>
+              <width>391</width>
+              <height>311</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(210, 210, 210);
+}
+</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <widget class="QLabel" name="ParaCekmeText">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>10</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Para Çekme</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="MiktarParaCek">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>70</y>
+               <width>281</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="maxLength">
+              <number>12</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Miktar (TL) (Örn: 1250.5)</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="KKNoCekme1">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>130</y>
+               <width>80</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="maxLength">
+              <number>4</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Kredi</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="CVCCekme">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>190</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="maxLength">
+              <number>3</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>CVC</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="ParaCekButon">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>250</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Çek</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="KKNoCekme2">
+             <property name="geometry">
+              <rect>
+               <x>110</x>
+               <y>130</y>
+               <width>80</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="maxLength">
+              <number>4</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Kartı</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="KKNoCekme3">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>130</y>
+               <width>80</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="maxLength">
+              <number>4</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>No</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="KKNoCekme4">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>130</y>
+               <width>80</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="maxLength">
+              <number>4</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>4 Hane</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="ParaCekMaxButon">
+             <property name="geometry">
+              <rect>
+               <x>310</x>
+               <y>70</y>
+               <width>61</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Max</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QLabel" name="BakiyeIslemText">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>430</y>
+              <width>241</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="piyasaWidget">
+          <widget class="QGroupBox" name="piyasaIcerik">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>841</width>
+             <height>551</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(210, 210, 210);
+}
+</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QFrame" name="FrameBTCPiyasa">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>391</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoBTC_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/BTC.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextBTC_2">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>16</y>
+               <width>141</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Bitcoin (BTC)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="DegerBTC">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>40</y>
+               <width>131</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisBTC">
+             <property name="geometry">
+              <rect>
+               <x>270</x>
+               <y>40</y>
+               <width>111</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisBTCYuzde">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>10</y>
+               <width>91</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0%</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoBTCAl">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Satın Al/Sat</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoBTCDetay">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Detay</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="FrameETHPiyasa">
+            <property name="geometry">
+             <rect>
+              <x>430</x>
+              <y>20</y>
+              <width>391</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoETH_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/ETH.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextETH_2">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>16</y>
+               <width>151</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Ethereum (ETH)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="DegerETH">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>40</y>
+               <width>131</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisETH">
+             <property name="geometry">
+              <rect>
+               <x>270</x>
+               <y>40</y>
+               <width>111</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisETHYuzde">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>10</y>
+               <width>91</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0%</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoETHDetay">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Detay</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoETHAl">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Satın Al/Sat</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="FrameAVAXPiyasa">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>150</y>
+              <width>391</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoAVAX_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/AVAX.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextAVAX_2">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>16</y>
+               <width>171</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Avalanche (AVAX)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="DegerAVAX">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>40</y>
+               <width>131</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisAVAX">
+             <property name="geometry">
+              <rect>
+               <x>270</x>
+               <y>40</y>
+               <width>111</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisAVAXYuzde">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>10</y>
+               <width>91</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0%</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoAVAXAl">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Satın Al/Sat</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoAVAXDetay">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Detay</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="FrameCHZPiyasa">
+            <property name="geometry">
+             <rect>
+              <x>430</x>
+              <y>150</y>
+              <width>391</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoCHZ_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/CHZ.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextCHZ_2">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>16</y>
+               <width>141</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Chiliz (CHZ)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="DegerCHZ">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>40</y>
+               <width>131</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisCHZ">
+             <property name="geometry">
+              <rect>
+               <x>270</x>
+               <y>40</y>
+               <width>111</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisCHZYuzde">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>10</y>
+               <width>91</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0%</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoCHZAl">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Satın Al/Sat</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoCHZDetay">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Detay</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="FrameDOGEPiyasa">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>280</y>
+              <width>391</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoDOGE_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/DOGE.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextDOGE_2">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>16</y>
+               <width>161</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Dogecoin (DOGE)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="DegerDOGE">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>40</y>
+               <width>131</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisDOGE">
+             <property name="geometry">
+              <rect>
+               <x>270</x>
+               <y>40</y>
+               <width>111</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisDOGEYuzde">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>10</y>
+               <width>91</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0%</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoDOGEAl">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Satın Al/Sat</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoDOGEDetay">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Detay</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="FrameHOTPiyasa">
+            <property name="geometry">
+             <rect>
+              <x>430</x>
+              <y>280</y>
+              <width>391</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoHOT_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/HOT.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextHOT_2">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>16</y>
+               <width>141</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Holo (HOT)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="DegerHOT">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>40</y>
+               <width>131</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisHOT">
+             <property name="geometry">
+              <rect>
+               <x>270</x>
+               <y>40</y>
+               <width>111</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisHOTYuzde">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>10</y>
+               <width>91</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0%</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoHOTAl">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Satın Al/Sat</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoHOTDetay">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Detay</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="FrameXRPPiyasa">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>410</y>
+              <width>391</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoXRP_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/XRP.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextXRP_2">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>16</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Ripple (XRP)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="DegerXRP">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>40</y>
+               <width>131</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisXRP">
+             <property name="geometry">
+              <rect>
+               <x>270</x>
+               <y>40</y>
+               <width>111</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisXRPYuzde">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>10</y>
+               <width>91</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0%</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoXRPAl">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Satın Al/Sat</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoXRPDetay">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Detay</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="FrameXLMPiyasa">
+            <property name="geometry">
+             <rect>
+              <x>430</x>
+              <y>410</y>
+              <width>391</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="LogoXLM_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>61</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="simgeler.qrc">:/simge/simge/XLM.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TextXLM_2">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>16</y>
+               <width>141</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Stellar (XLM)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="DegerXLM">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>40</y>
+               <width>131</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisXLM">
+             <property name="geometry">
+              <rect>
+               <x>270</x>
+               <y>40</y>
+               <width>111</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ArtisXLMYuzde">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>10</y>
+               <width>91</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>0%</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoXLMAl">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Satın Al/Sat</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KriptoXLMDetay">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>80</y>
+               <width>181</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(73, 147, 221);
+	border-radius: 6px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Detay</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="ayarlarWidget">
+          <widget class="QGroupBox" name="ayarlarIcerik">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>841</width>
+             <height>551</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(210, 210, 210);
+}
+</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QGroupBox" name="HesapAyarBox">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>110</y>
+              <width>391</width>
+              <height>311</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(210, 210, 210);
+}
+</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <widget class="QLineEdit" name="IsimText">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>70</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>İsim</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="SoyisimText">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>130</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Soyisim</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="MailText">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>190</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>E-Posta</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="HesapAyarText">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>10</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Hesap Ayarları</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="KaydetButon">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>250</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Kaydet</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="SifreAyarBox">
+            <property name="geometry">
+             <rect>
+              <x>430</x>
+              <y>110</y>
+              <width>391</width>
+              <height>311</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <widget class="QLabel" name="SifreAyarText">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>10</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Şifre Ayarları</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="SifreEski">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>70</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Eski Şifre</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="SifreText">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>130</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Yeni Şifre</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="SifreTekrar">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>190</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Yeni Şifre Tekrarı</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="SifreGuncelle">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>250</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Kaydet</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QPushButton" name="HesapSil">
+            <property name="geometry">
+             <rect>
+              <x>680</x>
+              <y>490</y>
+              <width>141</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Hesabı Sil</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QLabel" name="AyarlarIslemText">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>430</y>
+              <width>241</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="kriptoSatAlWidget">
+          <widget class="QGroupBox" name="kriptoSatAlBox">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>841</width>
+             <height>551</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(210, 210, 210);
+}</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QFrame" name="kriptoSatAlFrame">
+            <property name="geometry">
+             <rect>
+              <x>210</x>
+              <y>30</y>
+              <width>421</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="kriptoSatAlLogo">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>101</width>
+               <height>101</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="kriptoSatAlAdi">
+             <property name="geometry">
+              <rect>
+               <x>130</x>
+               <y>0</y>
+               <width>281</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>15</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="kriptoSatAlCuzdan">
+             <property name="geometry">
+              <rect>
+               <x>130</x>
+               <y>70</y>
+               <width>281</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>15</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="kriptoSatAlDeger">
+             <property name="geometry">
+              <rect>
+               <x>130</x>
+               <y>40</y>
+               <width>281</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>15</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="kriptoSatBox">
+            <property name="geometry">
+             <rect>
+              <x>430</x>
+              <y>180</y>
+              <width>391</width>
+              <height>261</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(210, 210, 210);
+}
+</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <widget class="QLineEdit" name="kriptoSatMiktar">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>70</y>
+               <width>281</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="maxLength">
+              <number>12</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Adet (Kripto) (Örn: 1000.25)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="kriptoAdiSat">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>10</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Kripto Sat</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="kriptoSatButon">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>190</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Sat</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="kriptoSatMax">
+             <property name="geometry">
+              <rect>
+               <x>310</x>
+               <y>70</y>
+               <width>61</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Max</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="kriptoSatSifre">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>130</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Hesap Şifresi</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="kriptoAlBox">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>180</y>
+              <width>391</width>
+              <height>261</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(210, 210, 210);
+}
+</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <widget class="QLineEdit" name="kriptoAlMiktar">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>70</y>
+               <width>281</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="maxLength">
+              <number>12</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Miktar (TL) (Örn: 1250.5)</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="kriptoAdiAl">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>10</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Kripto Satın Al</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="kriptoAlButon">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>190</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Satın Al</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="kriptoAlMax">
+             <property name="geometry">
+              <rect>
+               <x>310</x>
+               <y>70</y>
+               <width>61</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Max</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="kriptoAlSifre">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>130</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+	border-radius: 12px;
+	border: 2px solid rgb(74, 125, 200);
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(60, 99, 161);
+}
+QLineEdit::hover{
+	border: 2px solid rgb(45, 75, 121) ;
+}
+QLineEdit::focus{
+	border: 2px solid rgb(45, 75, 121) ;
+	background-color: rgb(52, 87, 140);
+}</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Hesap Şifresi</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QLabel" name="kriptoSatAlIslem">
+            <property name="geometry">
+             <rect>
+              <x>210</x>
+              <y>450</y>
+              <width>421</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="piyasaGeriButon_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>61</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Geri</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="kriptoDetayWidget">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(60, 99, 161);</string>
+          </property>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>841</width>
+             <height>551</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QGroupBox{
+	border-radius: 12px;
+	border: 2px solid rgb(210, 210, 210);
+}
+</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QFrame" name="kriptoDetayFrame">
+            <property name="geometry">
+             <rect>
+              <x>140</x>
+              <y>130</y>
+              <width>561</width>
+              <height>150</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+	border-radius: 12px;
+	background-color: rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="kriptoDetayHacim">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>100</y>
+               <width>271</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>24s  Hacim: 0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="kriptoDetayDegisim">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>50</y>
+               <width>271</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Değişim: 0 TL (0%)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="kriptoDetayMax">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>0</y>
+               <width>271</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>En Yüksek: 0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="kriptoDetayMin">
+             <property name="geometry">
+              <rect>
+               <x>290</x>
+               <y>50</y>
+               <width>271</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>En Düşük: 0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="kriptoDetayAcilis">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>100</y>
+               <width>271</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Açılış Fiyatı: 0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="kriptoDetayAnlik">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>0</y>
+               <width>271</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI Historic</family>
+               <pointsize>13</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel{
+	background: transparent;
+}</string>
+             </property>
+             <property name="text">
+              <string>Anlık Değer: 0 TL</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="kriptoDetayGrafik" native="true">
+            <property name="geometry">
+             <rect>
+              <x>180</x>
+              <y>280</y>
+              <width>461</width>
+              <height>261</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="kriptoDetayText">
+            <property name="geometry">
+             <rect>
+              <x>290</x>
+              <y>20</y>
+              <width>401</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI Historic</family>
+              <pointsize>35</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	background: transparent;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="kriptoDetayLogo">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>20</y>
+              <width>91</width>
+              <height>91</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="piyasaGeriButon">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>61</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+	border-radius: 12px;
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Geri</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="UstFrame">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>931</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{
+	background-color: rgb(45, 75, 121);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="LogoFrame">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>71</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="simgeler.qrc">:/simge/simge/logo.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="UstIcerikFrame">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>0</y>
+          <width>861</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="UstIcerikButonFrame">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>861</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+	background-color: rgb(74, 125, 200);
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="ProgAdiFrame">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>781</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="ProgAdiText">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>5</y>
+             <width>691</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI Historic</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background: transparent;
+	margin-left: 5px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Kriptogram</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="ProgButonlar">
+          <property name="geometry">
+           <rect>
+            <x>780</x>
+            <y>0</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="asagiButton">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>41</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {	
+	border: none;
+	background-color: transparent;
+}
+QPushButton:hover {
+	background-color: rgb(60, 99, 161);
+}
+QPushButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="simgeler.qrc">
+             <normaloff>:/simge/simge/s-asagi.png</normaloff>:/simge/simge/s-asagi.png</iconset>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="kapatButon">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>0</y>
+             <width>41</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {	
+	border: none;
+	background-color: transparent;
+}
+QPushButton:hover {
+	background-color: rgb(60, 99, 161);
+}
+QPushButton:pressed {	
+	background-color: rgb(85, 170, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="simgeler.qrc">
+             <normaloff>:/simge/simge/s-kapat.png</normaloff>:/simge/simge/s-kapat.png</iconset>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="UstIcerikButonFrame_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>30</y>
+           <width>861</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+	background-color: rgb(51, 87, 139);
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="kullaniciBakiye">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>0</y>
+            <width>291</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Historic</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background: transparent;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Bakiye: 0 TL</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="BakiyeIslemButon">
+          <property name="geometry">
+           <rect>
+            <x>729</x>
+            <y>0</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {	
+	border: none;
+	background-color: rgb(85, 170, 255);
+}
+QPushButton:hover {
+	background-color: rgb(70, 141, 211);
+}
+QPushButton:pressed {	
+	background-color: rgb(53, 110, 163);
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Bakiye İşlemleri</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>BakiyeIslemButon</tabstop>
+  <tabstop>cuzdanButon</tabstop>
+  <tabstop>piyasaButon</tabstop>
+  <tabstop>ayarlarButon</tabstop>
+  <tabstop>cikisButon</tabstop>
+  <tabstop>asagiButton</tabstop>
+  <tabstop>kapatButon</tabstop>
+  <tabstop>MiktarParaAt</tabstop>
+  <tabstop>KKNoAtma1</tabstop>
+  <tabstop>KKNoAtma2</tabstop>
+  <tabstop>KKNoAtma3</tabstop>
+  <tabstop>KKNoAtma4</tabstop>
+  <tabstop>CVCAtma</tabstop>
+  <tabstop>ParaYatirButon</tabstop>
+  <tabstop>MiktarParaCek</tabstop>
+  <tabstop>KKNoCekme1</tabstop>
+  <tabstop>KKNoCekme2</tabstop>
+  <tabstop>KKNoCekme3</tabstop>
+  <tabstop>KKNoCekme4</tabstop>
+  <tabstop>CVCCekme</tabstop>
+  <tabstop>ParaCekButon</tabstop>
+  <tabstop>KriptoBTCAl</tabstop>
+  <tabstop>KriptoBTCDetay</tabstop>
+  <tabstop>KriptoETHAl</tabstop>
+  <tabstop>KriptoETHDetay</tabstop>
+  <tabstop>KriptoAVAXAl</tabstop>
+  <tabstop>KriptoAVAXDetay</tabstop>
+  <tabstop>KriptoCHZAl</tabstop>
+  <tabstop>KriptoCHZDetay</tabstop>
+  <tabstop>KriptoDOGEAl</tabstop>
+  <tabstop>KriptoDOGEDetay</tabstop>
+  <tabstop>KriptoHOTAl</tabstop>
+  <tabstop>KriptoHOTDetay</tabstop>
+  <tabstop>KriptoXRPAl</tabstop>
+  <tabstop>KriptoXRPDetay</tabstop>
+  <tabstop>KriptoXLMAl</tabstop>
+  <tabstop>KriptoXLMDetay</tabstop>
+  <tabstop>IsimText</tabstop>
+  <tabstop>SoyisimText</tabstop>
+  <tabstop>MailText</tabstop>
+  <tabstop>KaydetButon</tabstop>
+  <tabstop>SifreEski</tabstop>
+  <tabstop>SifreText</tabstop>
+  <tabstop>SifreTekrar</tabstop>
+  <tabstop>SifreGuncelle</tabstop>
+  <tabstop>HesapSil</tabstop>
+  <tabstop>kriptoAlMiktar</tabstop>
+  <tabstop>kriptoAlSifre</tabstop>
+  <tabstop>kriptoAlButon</tabstop>
+  <tabstop>kriptoAlMax</tabstop>
+  <tabstop>kriptoSatMiktar</tabstop>
+  <tabstop>kriptoSatSifre</tabstop>
+  <tabstop>kriptoSatButon</tabstop>
+  <tabstop>kriptoSatMax</tabstop>
+  <tabstop>piyasaGeriButon</tabstop>
+ </tabstops>
+ <resources>
+  <include location="simgeler.qrc"/>
+ </resources>
+ <connections/>
+</ui>
